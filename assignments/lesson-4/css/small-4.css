@@ -5,7 +5,7 @@ body {
 header {
 	margin: 10px auto;
 	background-color: rgb(158, 108, 214);
-	border: 50px solid rgb(23, 172, 218);
+	border: 1px solid rgb(23, 172, 218);
 	box-shadow: 0 0 30px rgb(43, 7, 65);
 	text-align: center;
 }
