@@ -9,7 +9,8 @@ body {
     line-height: 32px;
     font-family: Verdana, Georgia, sans-serif; /* Ubuntu, sans-serif */;
     color: #0074d9;
-}
+    background-color: rgba(105, 82, 189, 0.342);
+    }
 
 h1 {
     font-size: 2em;
@@ -19,7 +20,7 @@ h1 {
 h2 {
     font-size: 1.5em;
     text-align: center;
-    border-bottom: 1px solid #bbbbbb;
+    border-bottom: 1px solid rgba(238, 13, 13, 0.815);
 }
 
 header, main, footer {
@@ -31,7 +32,7 @@ header, main, footer {
 header, footer, footer a {
     text-align: center;
     background-color: #0074d9;
-    color: whitesmoke;
+    color: rgba(51, 187, 250, 0.815);
 }
 
 header img {
