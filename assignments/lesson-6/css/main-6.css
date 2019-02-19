@@ -1,59 +1,142 @@
 /* CIT 230 - Assignment Portal CSS Template */
-/* You may use #HEX or color names */
+#logo {
+    max-height: 90px;
+    margin:1px auto;
+    display: block
+}
 
-/* * is a wildcard referring to all elements. */
-* { margin: 0; box-sizing: border-box; } 
+body {
+    margin: auto;
+    background-color: rgb(119, 100, 190);
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-size: 15px
+}
 
-body { 
-    font-size: 16px; 
-    line-height: 32px;
-    font-family: Verdana, Georgia, sans-serif; /* Ubuntu, sans-serif */;
-    color: #0074d9;
-    background-color: rgba(105, 82, 189, 0.342);
-    }
+body li {
+    font-family: 'Roboto', sans-serif;
+    color: #091263;
+}
 
 h1 {
-    font-size: 2em;
-    color: #ffffff;
+font-family: 'Roboto', sans-serif;
+color: rgba(30, 185, 247, 0.918);
+font-size: 24px;
 }
 
 h2 {
-    font-size: 1.5em;
+font-family: 'Roboto', sans-serif;
+color: rgba(57, 118, 250, 0.918);
+font-size: 20px;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(3, 34, 100);
+    font-size: 16px;
+    font-style: italic;
+}
+/* unvisited link */
+a:link {
+    color: rgb(3, 34, 100)
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(49, 9, 61);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(14, 238, 25);
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(17, 141, 27);
+  }
+  
+
+header, nav {
     text-align: center;
-    border-bottom: 1px solid rgba(238, 13, 13, 0.815);
+}
+header {
+    background-color: rgb(24, 20, 20);
 }
 
-header, main, footer {
-    margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: 50em;
+header img, .heading {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(119, 100, 190);
 }
 
-header, footer, footer a {
-    text-align: center;
-    background-color: #0074d9;
-    color: rgba(51, 187, 250, 0.815);
+header .heading p {
+    color: #999;
 }
 
+.motto {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+/*  ----- -- ------- ----- Navigation */
+
+nav li {
+    display: inline;
+}
+nav {
+    padding: 8px;
+    box-shadow: 0 6px 30px #999;
+}
+
+#display {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav li a {
+    color: #888;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav  li {
+  background-color: rgb(119, 100, 190);
+  color: white;
+}
+
+.active a {
+  background-color: #222;
+  color:white;
+}
+<!--
 header img {
     width: 150px;
     height: auto;
-    float: right;
+    float: center;
 }
+
 
 footer {
     font-size: 1em;
 }
 .topnav {
-    background-color:black;
+    background-color:rgb(119, 100, 190);
     overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
-    display: block;
-    color: #fff;
+    float: middle;
+    color: rgb(49, 9, 61);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -62,7 +145,7 @@ footer {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color:orange;
+    color:rgb(14, 238, 25);
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -95,156 +178,130 @@ footer {
 }
 
 
-
-/*-------- MAIN ------------*/
-main {}
-main h2
-{
-    text-align: center;
-    margin-left: 2%;
-    color:forestgreen;
-    font-family: georgia;
-}
-main figure { margin: 0 0 .2rem 2%; width:100%; }
-main figure img { width: 100%; }
-main figure picture{
+/*  ----- -- ------- ----- Hero */
+.hero-ph img {
     max-width: 100%;
     height: auto;
-}
-
-main figure.franklin2{
-    width: 50%;
-    margin: 0 0 0 2%;
-}
-main figure.franklin2 img {width: 100%;}
-
-section
-{
-}
-section h3
-{
-    text-align: center;
-    font-family: georgia;
-    color:darkgoldenrod;
-}
-.box
-{
-    display: inline-block;
-    width: auto;
-    height: auto;
-    margin: 1em;
-    border: 2px solid #88997f;
-    padding: 0px 20px;
-    margin-bottom: 20px;
-    background-color:azure;
-}
-/* .forecast
-{
-    display:inline-block;
-    width: auto;
-    height: auto;
-    margin: 1em;
-    border: 2px solid #88997f;
-    padding: 0px 20px;
-    margin-bottom: 20px;
-    background-color:antiquewhite;
-
-}
-*/
-.forecast {
-    display: none;
-}
-
-.current{
-    display:left;
-    margin: auto;
-    align-items: center;
-    order: -1;
-}
-
-.current img{
-    max-width: 50px;
-    margin: 10px 30px;
-}
-
-.current p {
-    margin: 0px 30px;
-    font-family: georgia;
-    color:darkgreen;
-}
-
-.highlow{
-    text-align: center;
-}
-
-.highlow p{
-    display: inline-block;
-    margin: 0px 30px;
-}
-
-.weathersummary {
-    display: flex;
-    flex-direction: column;
-    margin-left: 2%;
-    font-family: georgia;
-}
-
-.weathersummary h3 {
-    order: -2;
-    text-align: center;
-    font-size: 150%;
-
-}
-
-.highlow{
-    text-align: center;
-}
-
-.highlow p{
-    display: inline-block;
-    margin: 0px 30px;
-}
-
-.conditions{
-    text-align: center;
-}
-
-article
-{
-    border: 2px solid #87992f;
-    padding: 0px 20px;
-    margin-bottom: 20px;
-}
-
-article p.town-article img {
-    float: right;
-    width: 50%;
-    display: inline-block;
-    margin: 0 0 .2rem 2%;
-
-}
-
-footer {
-    background-color:darkorange;
-    color: #fff;
-    text-align: center;
-}
-footer aside {
-    background-color:darkcyan;
-    padding: 10px 20px;
-}
-footer>p {
-    padding: 0px 20px 10px;
-} /* This structure refers to p elements that are direct children of the footer element */
-
-/* Other Class Selectors */
-
-/*---- Clearfix: Force an Element not to collapse -----*/
+  }
+  
+  .herodiv {
+      margin: 10px auto;
+      position: relative;
+      max-width: 800px;
+      height: auto;
+  }
+  
+  .hero h1 {
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+  }
+  
+  .hero-ph {
+      margin: 10px auto;
+      max-width: 800px;
+      height: auto;
+  }
+  
+  .weathersummary {
+      float: absolute;
+      width: auto;
+      top: 01px;
+      left: 55px;
+      background-color: rgba(34, 34, 34, 0.562);
+      padding: 10px;
+      box-shadow: 0 0 30px #555;
+      border-radius: 5px;
+  }
+  
+  .weathersummary h1 {
+      color: #00B8A5;
+  }
+  
+  .weathersummary li {
+      color: rgb(222, 187, 230);
+      list-style: none;
+  }
+  
+  /*  ----- -- ------- ----- 5 days forecast */
+  
+  .forecast {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+  }
+  
+  .forecastbox {
+      display: inline-block;
+      width: 10%;
+      padding: 20px;
+      margin: 1.15em;
+      background-color: rgba(34, 34, 34, 0.308);
+      box-shadow: 0 0 30px rgba(51, 50, 50, 0.616);
+      border-radius: 5px;
+  }
+  
+  .forecastbox p {
+      color: white;
+  }
+      
+  
+  /*  ----- -- ------- ----- Article */
+  
+  main {
+      max-width: 740px;
+      background-color: white;
+      margin: 10px auto;
+      padding: 30px;
+      box-shadow: 0 0 30px #999;
+      border-radius: 5px;
+  
+  }
+  
+  article img {
+      max-width: 50%;
+      float: right;
+      margin: 10px;
+      box-shadow: 0 0 30px #999;
+      border-radius: 5px;
+  }
+  
+  /*  ----- -- ------- ----- Contact*/
+  
+  .contactinfo {
+      max-width: 740px;
+      background-color: #444;
+      margin: 10px auto 0px;
+      padding: 30px;
+  }
+  
+  .contactinfo p {
+      color: aliceblue;
+  }
+  
+  
+  .contactinfo map {
+      max-width: 50%;
+      float: right;
+      margin: 10px;
+      box-shadow: 0 0 30px #333;
+      border-radius: 5px;
+  }
+  
+  /*  ----- -- ------- ----- Footer */
+  
+  footer {
+      max-width: 740px;
+      background-color: rgb(161, 136, 175);
+      margin:auto;
+      padding: 30px;
+  }
+  
+  footer p {
+      color: white;
+  }
 .clearfix:after{
     content: "";
     display: table;
     clear: both;
 }
-
-
-

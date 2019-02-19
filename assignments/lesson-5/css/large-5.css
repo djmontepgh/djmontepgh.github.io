@@ -1,5 +1,7 @@
 #logo {
     max-height: 90px;
+    margin:1px auto;
+    display: block
 }
 
 body {
@@ -162,7 +164,7 @@ nav  li {
 }
 
 .weathersummary li {
-    color: white;
+    color: rgb(222, 187, 230);
     list-style: none;
 }
 
