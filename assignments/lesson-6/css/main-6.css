@@ -206,7 +206,7 @@ footer {
   .weathersummary {
       float: absolute;
       width: auto;
-      top: 01px;
+      top: 05px;
       left: 55px;
       background-color: rgba(34, 34, 34, 0.562);
       padding: 10px;
