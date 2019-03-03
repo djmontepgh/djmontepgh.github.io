@@ -54,12 +54,11 @@
         </nav> -->
         <nav class="topnav" id="myTopnav">  
             <a href="#">Home</a>
-            <a class="active" 
-               href="preston-7.html">Preston</a>
+            <a class="active" href="#">Preston</a>
             <a href="#">Soda Springs</a>
             <a href="#">Fish Haven</a>
             <a href="#">Storm Center</a>
-            <a href="gallery-7.html">Gallery</a>
+            <a href="./gallery-7.html">Gallery</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>                             
         </nav>
 
@@ -71,8 +70,8 @@
                 <figure>
                     <picture>
                         <source media="(max-width: 400px)" srcset="images/Small-preston.jpg">
-                        <source media="(max-width: 900px)" srcset="images/Medium-preston.jpg">
-                        <img src="images/Large-preston.jpeg " alt="Preston">
+                        <source media="(max-width: 800px)" srcset="images/Medium-preston.jpg">
+                        <img src="images/Large-preston.jpg" alt="Preston">
                     </picture>
                 </figure>
 
@@ -80,12 +79,11 @@
         <section class="weathersummary">
                 <h1>Weather Summary</h1>
                 <ul>
-                    <li>Currently: Sunny</li>
-                    <li>High:&nbsp;<span id="temp">76</span>&#0176;F</li>
-                    <li>Wind Chill:&nbsp;<span id="chill">78</span>&#0176;F</li>
-                    <li>Humidity:&nbsp;69%</li>
-                    <li>Wind Speed:&nbsp;<span id="speed">5</span> mph</li>
-                    
+                        <li>Currently: Sunny</li>
+                        <li>High: 29 °F</li>
+                        <li>Wind Chill: 22 °F</li>
+                        <li>Humidity: 92%</li>
+                        <li>Wind Speed: 6 mph</li>
                 </ul>
             </section>
             </div>
@@ -117,9 +115,10 @@
         <main>   
             <article class="clearfix"> 
                     <picture>
-                            <source media="(max-width: 100px)" srcset="images/Small-inclement-weather.png">
-                            <source media="(max-width: 200px)" srcset="images/Medium-inclement-weather.png">
-                            <img src="images/inclement-weather.png" width="200" height="200" alt="Article Image">  
+                            <img src="images/inclement-weather.png" alt="The Sun" 
+                            srcset="images/Small-inclement-weather.png 1x,
+                            images/Medium-inclement-weather.png 2x,
+                            images/inclement-weather.png 3x">    
                     </picture> 
                 <h1>"Where is Napolean Dynamite now?"</h1>
                     <p>Published by Best Life Pro</p>      
@@ -134,14 +133,15 @@
                 <div class="map">
 
                 <h1>Contact Information</h1>
-                <br>               <ul>
-                    <li> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94731.38143520687!2d-111.95053786182898!3d42.09985292461637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1550460752672" frameborder="0" style="border:0" allowfullscreen></iframe></li>               
-                </ul>
                 Location:
                 <p>30 N 1st E</p>
                 <p>Preston, ID 83263</p>
                 <p>555.867.5309</p>
-                <p>wsdws@shookcast.com</p>   
+                <p>wsdws@shookcast.com</p>  
+                <br>               <ul>
+                    <li> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94731.38143520687!2d-111.95053786182898!3d42.09985292461637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1550460752672" frameborder="0" style="border:0" allowfullscreen></iframe></li>               
+                </ul>
+                 
 
 
             </section>
@@ -155,6 +155,7 @@
             </footer>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>
+        <script src="scripts/windchill.js"></script>
         <script async src="scripts/picturefill.min.js"></script>
 
     </body>    

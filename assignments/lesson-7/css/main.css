@@ -1,6 +1,6 @@
 /* CIT 230 - Assignment Portal CSS Template */
 #logo {
-    max-height: 100px;
+    max-height: 90px;
     margin:1px auto;
     display: block
 }
@@ -128,18 +128,6 @@ header img {
 footer {
     font-size: 1em;
 }
-
-.container {
-    margin: 1rem auto; display:grid; grid-template-columns: 1fr 1fr 1fr; max-width: 1400px;}
-
-    img { width: 300px; height: auto; margin: .5rem;}
-    figcaption {font-size: smaller;}
-    /* hover effect */
-    
-.norm:hover {
-    box-shadow: 0 0 50px #333;}
-
-
 .topnav {
     background-color:rgb(119, 100, 190);
     overflow: hidden;
@@ -199,7 +187,7 @@ footer {
   .herodiv {
       margin: 10px auto;
       position: relative;
-      max-width: 1400px;
+      max-width: 800px;
       height: auto;
   }
   
@@ -211,7 +199,7 @@ footer {
   
   .hero-ph {
       margin: 10px auto;
-      max-width: 1400px;
+      max-width: 800px;
       height: auto;
   }
   
@@ -261,7 +249,7 @@ footer {
   /*  ----- -- ------- ----- Article */
   
   main {
-      max-width: 1400px;
+      max-width: 740px;
       background-color: white;
       margin: 10px auto;
       padding: 30px;
@@ -281,7 +269,7 @@ footer {
   /*  ----- -- ------- ----- Contact*/
   
   .contactinfo {
-      max-width: 1400px;
+      max-width: 740px;
       background-color: #444;
       margin: 10px auto 0px;
       padding: 30px;
@@ -303,7 +291,7 @@ footer {
   /*  ----- -- ------- ----- Footer */
   
   footer {
-      max-width: 1400px;
+      max-width: 740px;
       background-color: rgb(161, 136, 175);
       margin:auto;
       padding: 30px;

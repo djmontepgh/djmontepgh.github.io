@@ -1,0 +1,307 @@
+/* CIT 230 - Assignment Portal CSS Template */
+#logo {
+    max-height: 90px;
+    margin:1px auto;
+    display: left;
+}
+
+body {
+    margin: auto;
+    background-color: rgb(119, 100, 190);
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-size: 15px
+}
+
+body li {
+    font-family: 'Roboto', sans-serif;
+    color: #091263;
+}
+
+h1 {
+font-family: 'Roboto', sans-serif;
+color: rgba(30, 185, 247, 0.918);
+font-size: 24px;
+}
+
+h2 {
+font-family: 'Roboto', sans-serif;
+color: rgba(57, 118, 250, 0.918);
+font-size: 20px;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(3, 34, 100);
+    font-size: 16px;
+    font-style: italic;
+}
+/* unvisited link */
+a:link {
+    color: rgb(3, 34, 100)
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(49, 9, 61);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(14, 238, 25);
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(17, 141, 27);
+  }
+  
+
+header, nav {
+    text-align: center;
+}
+header {
+    background-color: rgb(24, 20, 20);
+}
+
+header img, .heading {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(119, 100, 190);
+}
+
+header .heading p {
+    color: #999;
+}
+
+.motto {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+/*  ----- -- ------- ----- Navigation */
+
+nav li {
+    display: inline;
+}
+nav {
+    padding: 8px;
+    box-shadow: 0 6px 30px #999;
+}
+
+#display {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav li a {
+    color: #888;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav  li {
+  background-color: rgb(119, 100, 190);
+  color: white;
+}
+
+.active a {
+  background-color: #222;
+  color:white;
+}
+<!--
+header img {
+    width: 150px;
+    height: auto;
+    float: center;
+}
+
+
+footer {
+    font-size: 1em;
+}
+.topnav {
+    background-color:rgb(119, 100, 190);
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: middle;
+    color: rgb(49, 9, 61);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color:rgb(14, 238, 25);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 800px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 800px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+/*  ----- -- ------- ----- Hero */
+.hero-ph img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .herodiv {
+      margin: 10px auto;
+      position: relative;
+      max-width: 800px;
+      height: auto;
+  }
+  
+  .hero h1 {
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+  }
+  
+  .hero-ph {
+      margin: 10px auto;
+      max-width: 800px;
+      height: auto;
+  }
+  
+  .weathersummary {
+      float: absolute;
+      width: auto;
+      top: 05px;
+      left: 55px;
+      background-color: rgba(34, 34, 34, 0.562);
+      padding: 10px;
+      box-shadow: 0 0 30px #555;
+      border-radius: 5px;
+  }
+  
+  .weathersummary h1 {
+      color: #00B8A5;
+  }
+  
+  .weathersummary li {
+      color: rgb(222, 187, 230);
+      list-style: none;
+  }
+  
+  /*  ----- -- ------- ----- 5 days forecast */
+  
+  .forecast {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+  }
+  
+  .forecastbox {
+      display: inline-block;
+      width: 10%;
+      padding: 20px;
+      margin: 1.15em;
+      background-color: rgba(34, 34, 34, 0.308);
+      box-shadow: 0 0 30px rgba(51, 50, 50, 0.616);
+      border-radius: 5px;
+  }
+  
+  .forecastbox p {
+      color: white;
+  }
+      
+  
+  /*  ----- -- ------- ----- Article */
+  
+  main {
+      max-width: 800px;
+      background-color: rgb(237, 210, 240);
+      margin: 10px auto;
+      padding: 30px;
+      box-shadow: 0 0 30px #999;
+      border-radius: 5px;
+  
+  }
+  
+  article img {
+      max-width: 50%;
+      float: right;
+      margin: 10px;
+      box-shadow: 0 0 30px #999;
+      border-radius: 5px;
+  }
+  
+  /*  ----- -- ------- ----- Contact*/
+  
+  .contactinfo {
+      max-width: 800px;
+      background-color: #444;
+      margin: 10px auto 0px;
+      padding: 30px;
+  }
+  
+  .contactinfo p {
+      color: aliceblue;
+  }
+  
+  
+  .contactinfo img {
+      max-width: 50%;
+      float: right;
+      margin: 10px;
+      box-shadow: 0 0 30px #333;
+      border-radius: 5px;
+  }
+  
+  /*  ----- -- ------- ----- Footer */
+  
+  footer {
+      max-width: 800px;
+      background-color: rgb(161, 136, 175);
+      margin:auto;
+      padding: 30px;
+  }
+  
+  footer p {
+      color: white;
+  }
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
