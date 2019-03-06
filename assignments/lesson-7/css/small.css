@@ -200,10 +200,10 @@ main {
     border-radius: 5px;
 
 }
-main div.mainfeature {
+main div.forecastbox {
     display: inline;
 }
-main div.gallery {
+main div.container {
     grid-template-columns: repeat (2, 1fr);
 }
 
