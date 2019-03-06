@@ -1,8 +1,9 @@
 /* CIT 230 - Assignment Portal CSS Template */
 #logo {
     max-height: 150px;
-    margin:1px auto;
-    display: block
+    margin:5px auto;
+    display: inline-block
+;
 }
 
 body {
@@ -22,14 +23,14 @@ body li {
 
 h1 {
 font-family: 'Roboto', sans-serif;
-color: rgba(30, 185, 247, 0.918);
-font-size: 24px;
+color: rgba(238, 127, 238, 0.918);
+font-size: 30px;
 text-align: center;
 }
 
 h2 {
 font-family: 'Roboto', sans-serif;
-color: rgba(57, 118, 250, 0.918);
+color: rgba(169, 189, 231, 0.918);
 font-size: 20px;
 }
 h3 {
@@ -69,13 +70,13 @@ header {
 header img, .heading {
     display: inline-block;
     vertical-align: middle;
-    margin: 10px;
+    margin: 5px;
     font-family: 'Roboto', sans-serif;
     color: rgb(119, 100, 190);
 }
 
 header .heading p {
-    color: #999;
+    color: rgb(26, 202, 10);
 }
 
 .motto {

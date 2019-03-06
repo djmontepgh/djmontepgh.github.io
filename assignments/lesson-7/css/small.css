@@ -1,7 +1,8 @@
 @media only screen and (min-width: 37.5em) {
     button { display:none; }
     #logo {
-    max-height: 90px;
+    max-height: 150px;
+    float: left;
 }
 
 body {
@@ -81,7 +82,7 @@ header img, .heading {
 }
 
 header .heading p {
-    color: #999;
+    color: rgb(26, 202, 10);
 }
 
 .motto {
