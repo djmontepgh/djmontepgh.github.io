@@ -1,8 +1,11 @@
-#logo {
+@media only screen and (min-width: 37.5em) {
+    button { display:none; }
+    #logo {
     max-height: 90px;
 }
 
 body {
+    font-size: 125%;
     margin: auto;
     background-color: rgb(119, 100, 190);
 }
@@ -169,7 +172,7 @@ nav  li {
 /*  ----- -- ------- ----- 5 days forecast */
 
 .forecast {
-    max-width: 800px;
+    max-width: 500px;
     margin: auto;
     text-align: center;
 }
@@ -203,13 +206,10 @@ main {
 main div.forecastbox {
     display: inline;
 }
-main div.gallery {
-    display: grid;
+div.gallery {
     grid-template-columns: repeat (2, 1fr);
     grid-gap: 5px;
-    grid-auto-rows: minmax(100px, auto);
-}
-
+    }
 
 article img {
     max-width: 50%;

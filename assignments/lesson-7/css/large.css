@@ -1,3 +1,6 @@
+@media only screen and (min-width: 64em) {
+    body { font-size: 135% }
+    
 #logo {
     max-height: 90px;
 }
@@ -176,7 +179,7 @@ nav  li {
 /*  ----- -- ------- ----- 5 days forecast */
 
 .forecast {
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
     text-align: center;
 }
@@ -210,20 +213,25 @@ main {
 main div.forecastbox {
     display: inline;
 }
-main div.gallery {
-    display: grid;
-    grid-template-columns: repeat (2, 1fr);
-    grid-gap: 5px;
-    grid-auto-rows: minmax(100px, auto);
-}
-
-article img {
-    max-width: 50%;
-    float: right;
-    margin: 10px;
+main {
+    max-width: 1200px;
+    background-color: white;
+    margin: 10px auto;
+    padding: 30px;
     box-shadow: 0 0 30px #999;
     border-radius: 5px;
+
 }
+/*PHOTO GRID*/
+div.gallery {
+    grid-template-columns: repeat (3, 1fr);
+
+}
+div.gallery figure:hover {
+   box-shadow: #333
+}
+
+
 
 /*  ----- -- ------- ----- Contact*/
 

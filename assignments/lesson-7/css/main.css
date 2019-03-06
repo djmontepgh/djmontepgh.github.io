@@ -187,7 +187,7 @@ footer {
   .herodiv {
       margin: 10px auto;
       position: relative;
-      max-width: 900px;
+      max-width: 1000px;
       height: auto;
   }
   
@@ -199,7 +199,7 @@ footer {
   
   .hero-ph {
       margin: 10px auto;
-      max-width: 900px;
+      max-width: 1000px;
       height: auto;
   }
   
@@ -207,10 +207,10 @@ footer {
       float: absolute;
       width: auto;
       top: 05px;
-      left: 55px;
+      left: 50px;
       background-color: rgba(34, 34, 34, 0.562);
-      padding: 10px;
-      box-shadow: 0 0 30px #555;
+      padding: 7px;
+      box-shadow: 0 0 25px #555;
       border-radius: 5px;
   }
   
@@ -249,7 +249,7 @@ footer {
   /*  ----- -- ------- ----- Article */
   
   main {
-      max-width: 900px;
+      max-width: 1000px;
       background-color: white;
       margin: 10px auto;
       padding: 30px;
@@ -260,13 +260,29 @@ footer {
   main div.forecastbox {
     display: inline;
 }
-main div.gallery {
+div.gallery {
+    padding: 0 .4em;
     display: grid;
-    grid-template-columns: repeat (2, 1fr);
-    grid-gap: 5px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: repeat (1, 1fr)
 }
-  
+div.gallery figure {
+    margin: 2.5%;
+    margin-right: 4%;
+    border: 2px solid #333
+    }
+div.gallery figure img { width: 300px;}
+div.gallery figure figcaption {
+    text-align: center;
+    font-size: .85rem;
+}
+
+p.cred {font-size: .75rem; }
+
+
+div.gallery figure:hover {
+   box-shadow: #333
+}
+
   article img {
       max-width: 50%;
       float: right;
@@ -274,11 +290,18 @@ main div.gallery {
       box-shadow: 0 0 30px #999;
       border-radius: 5px;
   }
+
+/*GALLERY*/
+.gallery {
+    box-sizing: border-box;
+}
+
+
   
   /*  ----- -- ------- ----- Contact*/
   
   .contactinfo {
-      max-width: 900px;
+      max-width: 1000px;
       background-color: #444;
       margin: 10px auto 0px;
       padding: 30px;
@@ -300,7 +323,7 @@ main div.gallery {
   /*  ----- -- ------- ----- Footer */
   
   footer {
-      max-width: 900px;
+      max-width: 1000px;
       background-color: rgb(161, 136, 175);
       margin:auto;
       padding: 30px;
