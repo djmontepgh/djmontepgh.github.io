@@ -24,6 +24,7 @@ h1 {
 font-family: 'Roboto', sans-serif;
 color: rgba(30, 185, 247, 0.918);
 font-size: 24px;
+text-align: center;
 }
 
 h2 {
@@ -121,7 +122,7 @@ nav  li {
 header img {
     width: 125px;
     height: auto;
-    float: auto;
+    float: center;
 }
 
 
