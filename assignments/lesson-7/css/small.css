@@ -131,7 +131,7 @@ nav  li {
 .herodiv {
     margin: 10px auto;
     position: relative;
-    max-width: 800px;
+    max-width: 500px;
     height: auto;
 }
 
@@ -143,7 +143,7 @@ nav  li {
 
 .hero-ph {
     margin: 10px auto;
-    max-width: 800px;
+    max-width: 500px;
     height: auto;
 }
 
@@ -192,7 +192,7 @@ nav  li {
 /*  ----- -- ------- ----- Article */
 
 main {
-    max-width: 740px;
+    max-width: 500px;
     background-color: white;
     margin: 10px auto;
     padding: 30px;
@@ -212,7 +212,7 @@ article img {
 /*  ----- -- ------- ----- Contact*/
 
 .contactinfo {
-    max-width: 740px;
+    max-width: 500px;
     background-color: #444;
     margin: 10px auto 0px;
     padding: 30px;
@@ -234,7 +234,7 @@ article img {
 /*  ----- -- ------- ----- Footer */
 
 footer {
-    max-width: 740px;
+    max-width: 500px;
     background-color: rgb(161, 136, 175);
     margin:auto;
     padding: 30px;
