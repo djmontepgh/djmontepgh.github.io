@@ -210,10 +210,9 @@ main {
 main div.mainfeature {
     display: inline;
 }
-main div.container {
+main div.gallery {
     grid-template-columns: repeat (2, 1fr);
 }
-
 
 article img {
     max-width: 50%;

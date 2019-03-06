@@ -200,6 +200,12 @@ main {
     border-radius: 5px;
 
 }
+main div.mainfeature {
+    display: inline;
+}
+main div.gallery {
+    grid-template-columns: repeat (2, 1fr);
+}
 
 article img {
     max-width: 50%;
