@@ -1,0 +1,67 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    #logo {
+        max-height: 150px;
+    }  
+  body { font-size: 135%; }
+    
+  header {
+      padding-bottom: 3em;
+  }
+  
+  /*header img {
+      margin-top: 0;
+  }*/
+  
+  header h1 {
+      font-size: 125%;
+      }
+  
+  
+  .weathersummay h3 {
+      font-size: 185%;
+      margin-top: -7.75em;
+      margin-bottom: 0;
+      margin-left: 7.75em;
+      padding: 0;
+  }
+  
+  div.weathersummay picture img {
+      /*display: inline-block;*/
+      margin-top: -.9em;
+         width: 100%;	
+  }
+  
+  section.tenforecast h3 {
+      margin-top: -.1em;
+  }
+  
+  article h3 { 
+      margin-top: 1em;
+      margin-left: .3em;
+      font-size: 175%;
+  }
+  
+  /* 3 column photo grid*/
+  div.gallery {
+            grid-template-columns: repeat(3, 1fr);
+  }
+  
+  div.gallery figure:hover {
+          box-shadow: 6px 6px 9px #7f1818;
+      }
+  
+  article h3 { 
+      margin-top: 0.9em;
+      font-size: 175%;
+  }
+  
+  footer {
+      margin-top: 1em;
+      font-size: 95%;
+  }
+  
+  footer>p.footer-bar {
+      margin-top: .5em;
+  }
+  }
