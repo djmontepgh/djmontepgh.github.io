@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Weather Shake Down With Shook</title>
+        <meta name="author" content="Gary Shook">
+        <meta name="description" content="Assignment portal page for Gary E. Shook in CIT 230: Web Frontend Development at Brigham Young University-Idaho.">
+        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <!--link rel="stylesheet" href="css/large-7.css"-->    
+        <link rel="stylesheet" href="css/main.css"> 
+    </head>
+<body>
+        <header class="clearfix">
+                <figure class="logo">
+                    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+                    <img src="images/sun3.png" alt="The Sun" 
+                        srcset="images/sun3.png 1x,
+                        images/sun4.png 2x,
+                        images/sun5.png 3x">                
+                </figure>
+         
+            <section class="heading">
+                <h1>Weather Shake Down With Shook</h1>
+                        <div class="motto">
+                            <p><strong>Your up to the minute apocalypse forcast!</strong></p>
+                        </div>
+            </section>
+            </header> 
+
+       <!--<nav class="topnav" id="myTopnav">  
+            <ul class="navigation"></ul>
+                <li ><a href="./preston-6.html">Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li ><a href="#">Soda Springs</a></li>
+                <li ><a href="#">Fish Haven</a></li> 
+                <li ><a href="#">Storm Center</a></li>
+                <li ><a href="#">Gallery</a></l>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+
+            </ul>
+                             
+        </nav> -->
+        <nav class="topnav" id="myTopnav">  
+                <a href="#">Home</a>
+                <a class="active" href="./preston-8.html">Preston</a>
+                <a href="#">Soda Springs</a>
+                <a href="#">Fish Haven</a>
+                <a href="#">Storm Center</a>
+                <a href="./gallery-8.html">Gallery</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>                             
+            </nav>
+
+
+<!-- CONTENT HERE -->
+<main>
+<div id="content" class="clearfix">
+    <h1>Storm Center</h1>
+    <h3>Report Unusual Storm Activity</h3>
+
+    <div class="row">
+        <div class="left">
+
+            <form action="FormToEmail.php" method="post" enctype="multipart/form-data" name="storms" id="stormForm">
+
+                <!--<form action="FormToEmail.html" method="post" encrypt="multipart/form-data" name="email" id="storm" >-->
+
+                <fieldset>
+                    <legend><span>Personal Information</span></legend>
+                    <label><b><span>Fullname:</span></b><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{3,99}" required ></label>
+
+                    <label><b><span>Zip Code:</span></b><input name="zip" type="text" value="" placeholder="zip" pattern="[0-9._]{2,5}" required ></label>
+
+                    <label><b><span>Email:</span></b><input name="email" type="email" value="" placeholder="message@email.com" required ></label>
+
+                    <label><b><span>Phone:</span></b><input name="phone" type="tel" value="" placeholder="(555) 555-7890" pattern="[0-9]{10,20}" required ></label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend><span>Unusual Storm Activity</span></legend>
+                    <label><b><span>Storm Date:</span></b><input type="date" value=""></label>
+
+                    <label><b><span>Storm Type:</span></b><input name="stormTypes" type="text" placeholder="Select..." list="stormTypes" ></label>
+
+                    <datalist id="stormTypes">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+
+                    <label><b><span>Storm Severity Range:</span></b><input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">5</span></label>
+
+                    <label><b><span>Storm Regions:</span></b><input name="regions" type="text" placeholder="Select Region..." list="regions"></label>
+
+                    <datalist id="regions">
+                        <option value="Preston"></option>
+                        <option value="Soda Springs"></option>
+                        <option value="Fishhaven"></option>
+                    </datalist>
+
+                    <label><b><span>Danger Level:</span></b></label>
+                    <label id="danger" for="q1"><span>Are you in any mortal danger?</span></label>
+                    <input type="radio" name="q1" value="Yes"> Yes<br>
+                    <input type="radio" name="q1" value="No" checked> No<br>
+                </fieldset>
+
+                <fieldset class="message"><p>Message:</p>
+                    <textarea rows="4" cols="38" placeholder="Type here...">
+
+                    </textarea>
+                </fieldset>
+
+                <input type="submit" value="Submit!" class="submitBtn">
+
+                <input name="subject" type="hidden" value="Abnormal Weather Patterns" >
+                <input name="redirect" type="hidden" value="thanksTest.html" >
+            </form>
+        </div>
+
+    </div>
+
+
+    </div><!-- end of a row -->
+
+</main>
+
+<!-- FOOTER HERE -->
+<footer>
+        <p class="footer-bar">
+        &copy; Copyright 2019
+        &star; Gary E. Shook
+        &star; Arizona 
+        &star;<a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+        &star;<span id="currentdate">Current Date Placeholder</span></p>
+        </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script async src="scripts/picturefill.min.js"></script>
+
+</body>    
+</html>\

@@ -1,0 +1,51 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 35rem) {
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+/* Hamburger Remove */
+nav button {
+	display: none;
+}
+/* Main Menu Horizontal */
+nav ul.hide {
+	display: block;
+	display: flex;
+	flex-flow: row nowrap;
+}
+/* Have to keep both nav ul styles for some reason */
+nav ul {
+	display: flex;
+	flex-flow: row nowrap;
+}
+nav ul li a {
+	border: none;
+	border-right: 1px solid rgba(0,0,0,0.3);
+	padding: .8rem .8rem;
+}
+
+
+/*----------- MAIN --------------*/
+main div.mainfeature {
+	display: inline;
+}
+/* Gallery */
+main div.gallery {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+/*----------- ARTICLE --------------*/
+
+
+
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */
