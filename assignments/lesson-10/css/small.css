@@ -1,8 +1,12 @@
-#logo {
-    max-height: 90px;
+@media only screen and (min-width: 37.5em) {
+    button { display:none; }
+    #logo {
+    max-height: 150px;
+    float: left;
 }
 
 body {
+    font-size: 125%;
     margin: auto;
     background-color: rgb(119, 100, 190);
 }
@@ -78,7 +82,7 @@ header img, .heading {
 }
 
 header .heading p {
-    color: #999;
+    color: rgb(26, 202, 10);
 }
 
 .motto {
@@ -131,7 +135,7 @@ nav  li {
 .herodiv {
     margin: 10px auto;
     position: relative;
-    max-width: 800px;
+    max-width: 500px;
     height: auto;
 }
 
@@ -143,7 +147,7 @@ nav  li {
 
 .hero-ph {
     margin: 10px auto;
-    max-width: 800px;
+    max-width: 500px;
     height: auto;
 }
 
@@ -169,7 +173,7 @@ nav  li {
 /*  ----- -- ------- ----- 5 days forecast */
 
 .forecast {
-    max-width: 800px;
+    max-width: 500px;
     margin: auto;
     text-align: center;
 }
@@ -192,7 +196,7 @@ nav  li {
 /*  ----- -- ------- ----- Article */
 
 main {
-    max-width: 740px;
+    max-width: 500px;
     background-color: white;
     margin: 10px auto;
     padding: 30px;
@@ -200,6 +204,13 @@ main {
     border-radius: 5px;
 
 }
+main div.forecastbox {
+    display: inline;
+}
+div.gallery {
+    grid-template-columns: repeat (2, 1fr);
+    grid-gap: 5px;
+    }
 
 article img {
     max-width: 50%;
@@ -212,7 +223,7 @@ article img {
 /*  ----- -- ------- ----- Contact*/
 
 .contactinfo {
-    max-width: 740px;
+    max-width: 500px;
     background-color: #444;
     margin: 10px auto 0px;
     padding: 30px;
@@ -234,7 +245,7 @@ article img {
 /*  ----- -- ------- ----- Footer */
 
 footer {
-    max-width: 740px;
+    max-width: 500px;
     background-color: rgb(161, 136, 175);
     margin:auto;
     padding: 30px;
@@ -242,4 +253,5 @@ footer {
 
 footer p {
     color: white;
+}
 }
