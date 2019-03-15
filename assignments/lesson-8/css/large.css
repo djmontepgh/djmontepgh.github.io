@@ -1,3 +1,6 @@
+@media only screen and (min-width: 64em) {
+    body { font-size: 135% }
+    
 #logo {
     max-height: 90px;
 }
@@ -138,7 +141,7 @@ nav  li {
 .herodiv {
     margin: 10px auto;
     position: relative;
-    max-width: 800px;
+    max-width: 1200px;
     height: auto;
 }
 
@@ -150,7 +153,7 @@ nav  li {
 
 .hero-ph {
     margin: 10px auto;
-    max-width: 800px;
+    max-width: 1200px;
     height: auto;
 }
 
@@ -176,7 +179,7 @@ nav  li {
 /*  ----- -- ------- ----- 5 days forecast */
 
 .forecast {
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
     text-align: center;
 }
@@ -199,7 +202,7 @@ nav  li {
 /*  ----- -- ------- ----- Article */
 
 main {
-    max-width: 740px;
+    max-width: 1200px;
     background-color: white;
     margin: 10px auto;
     padding: 30px;
@@ -207,19 +210,33 @@ main {
     border-radius: 5px;
 
 }
-
-article img {
-    max-width: 50%;
-    float: right;
-    margin: 10px;
+main div.forecastbox {
+    display: inline;
+}
+main {
+    max-width: 1200px;
+    background-color: white;
+    margin: 10px auto;
+    padding: 30px;
     box-shadow: 0 0 30px #999;
     border-radius: 5px;
+
 }
+/*PHOTO GRID*/
+div.gallery {
+    grid-template-columns: repeat (3, 1fr);
+
+}
+div.gallery figure:hover {
+   box-shadow: #333
+}
+
+
 
 /*  ----- -- ------- ----- Contact*/
 
 .contactinfo {
-    max-width: 740px;
+    max-width: 1200px;
     background-color: #444;
     margin: 10px auto 0px;
     padding: 30px;
@@ -241,7 +258,7 @@ article img {
 /*  ----- -- ------- ----- Footer */
 
 footer {
-    max-width: 740px;
+    max-width: 1200px;
     background-color: rgb(161, 136, 175);
     margin:auto;
     padding: 30px;
