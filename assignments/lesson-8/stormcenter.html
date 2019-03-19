@@ -60,78 +60,79 @@
 
 <!-- CONTENT HERE -->
 <main>
-<div id="content" class="clearfix">
-    <h1>Storm Center</h1>
-    <h3>Report Unusual Storm Activity</h3>
-
-    <div class="row">
-        <div class="left">
-
-            <form action="FormToEmail.php" method="post" enctype="multipart/form-data" name="storms" id="stormForm">
-
-                <!--<form action="FormToEmail.html" method="post" encrypt="multipart/form-data" name="email" id="storm" >-->
-
-                <fieldset>
-                    <legend><span>Personal Information</span></legend>
-                    <label><b><span>Fullname:</span></b><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{3,99}" required ></label>
-
-                    <label><b><span>Zip Code:</span></b><input name="zip" type="text" value="" placeholder="zip" pattern="[0-9._]{2,5}" required ></label>
-
-                    <label><b><span>Email:</span></b><input name="email" type="email" value="" placeholder="message@email.com" required ></label>
-
-                    <label><b><span>Phone:</span></b><input name="phone" type="tel" value="" placeholder="(555) 555-7890" pattern="[0-9]{10,20}" required ></label>
-
-                </fieldset>
-
-                <fieldset>
-                    <legend><span>Unusual Storm Activity</span></legend>
-                    <label><b><span>Storm Date:</span></b><input type="date" value=""></label>
-
-                    <label><b><span>Storm Type:</span></b><input name="stormTypes" type="text" placeholder="Select..." list="stormTypes" ></label>
-
-                    <datalist id="stormTypes">
-                        <option value="Flash Flood"></option>
-                        <option value="Hail"></option>
-                        <option value="Hurricane"></option>
-                        <option value="Thunderstorm"></option>
-                        <option value="Tornado"></option>
-                    </datalist>
-
-                    <label><b><span>Storm Severity Range:</span></b><input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">5</span></label>
-
-                    <label><b><span>Storm Regions:</span></b><input name="regions" type="text" placeholder="Select Region..." list="regions"></label>
-
-                    <datalist id="regions">
-                        <option value="Preston"></option>
-                        <option value="Soda Springs"></option>
-                        <option value="Fishhaven"></option>
-                    </datalist>
-
-                    <label><b><span>Danger Level:</span></b></label>
-                    <label id="danger" for="q1"><span>Are you in any mortal danger?</span></label>
-                    <input type="radio" name="q1" value="Yes"> Yes<br>
-                    <input type="radio" name="q1" value="No" checked> No<br>
-                </fieldset>
-
-                <fieldset class="message"><p>Message:</p>
-                    <textarea rows="4" cols="38" placeholder="Type here...">
-
-                    </textarea>
-                </fieldset>
-
-                <input type="submit" value="Submit!" class="submitBtn">
-
-                <input name="subject" type="hidden" value="Abnormal Weather Patterns" >
-                <input name="redirect" type="hidden" value="thanksTest.html" >
-            </form>
+    <div id="content" class="clearfix">
+        <h1>Storm Center</h1>
+        <h3>Report Unusual Storm Activity</h3>
+    
+        <div class="row">
+            <div class="left">
+    
+                <form action="FormToEmail.php" method="post" enctype="multipart/form-data" name="storms" id="stormForm">
+    
+                    <!--<form action="FormToEmail.html" method="post" encrypt="multipart/form-data" name="email" id="storm" >-->
+    
+                    <fieldset>
+                        <legend><span>Personal Information</span></legend>
+                        <label><b><span>Full Name:</span><br/></b><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{3,99}" required></label> <br/>
+    
+                        <label><b><span>Zip Code:</span></b><br/><input name="zip" type="text" value="" placeholder="zip" pattern="[0-9._]{2,5}" required></label><br/>
+    
+                        <label><b><span>Email:</span></b><br/><input name="email" type="email" value="" placeholder="message@email.com"></label><br/>
+    
+                        <label><b><span>Phone:</span></b><br/><input name="phone" type="tel" value="" placeholder="(555) 555-7890" pattern="[0-9]{10,20}" required></label><br/>
+    
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend><span>Unusual Storm Activity</span></legend>
+                        <label><b><span>Storm Date:</span></b><br/><input type="date" value=""></label><br/>
+    
+                        <label><b><span>Storm Type:</span></b><br/><input name="stormTypes" type="text" placeholder="Select..." list="stormTypes" ></label><br/>
+    
+                        <datalist id="stormTypes">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist><br/>
+    
+                        <label><b><span>Storm Severity Range:</span></b><br/><input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">5</span></label><br/>
+    
+                        <label><b><span>Storm Regions:</span></b><br/><input name="regions" type="text" placeholder="Select Region..." list="regions"></label><br/>
+    
+                        <datalist id="regions">
+                            <option value="Preston"></option>
+                            <option value="Soda Springs"></option>
+                            <option value="Fishhaven"></option>
+                        </datalist><br/>
+    
+                        <label><b><span>Danger Level:</span></b></label><br/>
+                        <label id="danger" for="q1"><span>Are you in any mortal danger?</span></label><br/>
+                        <input type="radio" name="q1" value="Yes"> Yes
+                        <input type="radio" name="q1" value="No" checked> No<br>
+                    </fieldset>
+    
+                    <fieldset class="message"><p>Message:</p>
+                        <textarea rows="4" cols="38" placeholder="Type here...">
+    
+                        </textarea>
+                    </fieldset>
+    
+                    <input type="submit" value="Submit!" class="submitBtn">
+    
+                    <input name="subject" type="hidden" value="Abnormal Weather Patterns" >
+                    <input name="redirect" type="hidden" value="thanksTest.html" >
+                </form>
+            </div>
+    
         </div>
+    
+    
+        </div><!-- end of a row -->
+    
+    </main>
 
-    </div>
-
-
-    </div><!-- end of a row -->
-
-</main>
 
 <!-- FOOTER HERE -->
 <footer>

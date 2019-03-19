@@ -246,6 +246,52 @@ footer {
   .forecastbox p {
       color: white;
   }
+  main div#demo {
+	display: inline-flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+main div#demo a {
+	text-decoration: none;
+	color: black;
+}
+main div#demo div.townlink {
+	max-width: 245px;
+	box-shadow: 10px 10px 8px #888888;
+	padding: 0;
+	margin: 0 1.5em 1.5em 1.5em;
+	background-color: WhiteSmoke;
+}
+main div#demo h2 {
+	color: green;
+	font-size: 1.5em;
+}
+main div#demo figure {
+	padding: 0;
+	margin: 0;
+}
+main div#demo img {
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+main div#demo div.townbio {
+	text-align: center;
+}
+main div#demo span.motto {
+	font-weight: bold;
+	font-style: italic;
+	display: inline-block;
+    height: 2.2em;
+	
+}
+main div#demo span.year1, main div#demo span.rain1, main div#demo span.pop1 {
+	font-weight: bold;
+}
+
       
   
   /*  ----- -- ------- ----- Article */
