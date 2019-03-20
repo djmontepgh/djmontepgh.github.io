@@ -65,3 +65,25 @@
       margin-top: .5em;
   }
   }
+  #demo {
+    flex-flow: row nowrap;
+  }
+
+  #demo article {
+    width: 100%;
+    flex-flow: column nowrap;
+    align-self: stretch;
+    align-items: center;
+    max-height: 100%;
+    margin-bottom: 0;
+  }
+
+  #demo img {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: auto;
+    margin-top: auto;
+  }
+
+}
