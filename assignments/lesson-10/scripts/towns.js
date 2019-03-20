@@ -18,7 +18,8 @@ function demoData() {
     
         for (var i = 0; i < towns.length; i++) {
             var simplename = towns[i].name.toLowerCase().replace(' ','');
-            if (simplename == "preston") || (simplename == "sodasprings") || (simplename == "fishhaven") 
+            if (simplename == "preston")  (simplename == "sodasprings") || (simplename == "fishhaven") 
+            
                
             var myArticle = document.createElement('article');
             var townName = document.createElement('h2');
