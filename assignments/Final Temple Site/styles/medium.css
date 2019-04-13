@@ -134,6 +134,7 @@ footer {
  width: 100%;
 }
 #welcomePage {
+ 
  flex-flow: row wrap;
  justify-content: center;
  width: 100%;
@@ -145,13 +146,14 @@ footer {
  padding: 0 1em;
 }
 #MainPic {
- width:100%;
+ width: 100%;
  display: flex;
  flex-flow: row;
- align-content: center;
+ align-content: right;
  margin: 1em;
 }
 #MainPic img{
+
  align-content: center;
 }
 .homeMain {
