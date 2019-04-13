@@ -1,4 +1,4 @@
-@media only screen and (min-width: 415px) and (max-width: 1025px) {
+@media only screen and (min-width: 420px) and (max-width: 1199px) {
     /* Header */
     header {
      flex-flow: column;
@@ -145,7 +145,7 @@ footer {
  padding: 0 1em;
 }
 #MainPic {
- width: 100%;
+ width:100%;
  display: flex;
  flex-flow: row;
  align-content: center;
