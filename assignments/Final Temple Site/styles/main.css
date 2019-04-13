@@ -86,19 +86,20 @@
     ul.sub-menu{
         font-size: .65em;
         position: absolute;
-        background-color: #FFF;
+        background-color: rgb(255, 255, 255);
         list-style-type:none;
         width:102px;
         padding-left: 5px;
-        margin-left:-20px;
-        padding-top: 5px;
+        margin-left:2px;
+        padding-top: 0px;
         opacity:0;
         
     }
-    ul.sub-menu li{
-        padding-left:15px;
-        padding-top:5px;
-        padding-bottom:5px;    
+    ul.sub-menu li a{
+        color: #9e1097;
+        padding-left:18px;
+        padding-top:0px;
+        padding-bottom:10px;    
     }
     .FirstClass li:hover .sub-menu{
         opacity:1;
