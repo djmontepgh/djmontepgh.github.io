@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald');
+
+    /* General Main page styles  */
+    body {
+        width: 100%;
+        margin: 0;
+        background-color: rgb(253, 209, 247);
+        font-family: 'Oswald', sans-serif;
+        color: rgb(22, 1, 34);
+    }
+    h1, h2, h3 {
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    h1 {
+        font-size: 2.625em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+    p, li {
+        font-size: 1.125em;
+    }
+    ul {
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+    }
+
+    .onHover:hover {
+        -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+        -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+                box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    }
+
+
+    /* Header */
+    header {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        background-color: rgb(253, 209, 247);
+    }
+    #siteLogo {
+        width: 15em;
+    }
+    #siteLogo:hover {
+        -webkit-filter: drop-shadow(5px 2px 2px rgb(22, 1, 34));
+    filter: drop-shadow(5px 2px 2px rgb(22, 1, 34));
+    }
+
+    .headerR a {
+        color: rgb(59, 7, 88);
+    }
+    .headerR a:hover {
+        color: rgba(252, 10, 212, 0.966);
+        text-decoration: overline underline;
+        text-decoration-color: rgb(22, 1, 34);
+    }
+    .FirstClass {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+    }
+
+    /* Navigation */
+    nav {
+        margin-top: -1em;
+        z-index: 15;
+        background-color: rgb(247, 244, 246);
+    }
+    nav button {
+        position: absolute;
+        border: none;
+        background: rgba(5, 82, 141, 0.15);
+        font-weight: bold;
+    }
+    nav button:focus {outline:0;}
+    nav button:hover {
+        background-color: rgba(18, 73, 116, 0.15);
+        color: #ffffff;
+    }
+    ul.sub-menu{
+        font-size: .65em;
+        position: absolute;
+        background-color: #FFF;
+        list-style-type:none;
+        width:102px;
+        padding-left: 5px;
+        margin-left:-20px;
+        padding-top: 5px;
+        opacity:0;
+        
+    }
+    ul.sub-menu li{
+        padding-left:15px;
+        padding-top:5px;
+        padding-bottom:5px;    
+    }
+    .FirstClass li:hover .sub-menu{
+        opacity:1;
+        color: #470444;
+    }
+
+
+    /* Page Title */
+    .pageTitle {
+        text-align: center;
+        padding-top: 0.2em;
+        margin-top: 1em;
+        font-style: italic;
+        -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+            -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+                    box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    }
+
+    /* footer section */
+    #themiddle img:hover {
+        box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+        border-radius: 50%;
+    }
+    .footerstuffs{
+        display: flex;
+    }
+    #Base {
+        margin-top: 5em;
+        background-color: #FFF;
+    }
+
+    #Base h4 {
+        font-family: Dosis;
+    }
+    #themiddle { 
+        display: flex;
+        color: rgb(22, 1, 34);
+    }
+    #themiddle a{
+        color: rgb(22, 1, 34);
+        text-decoration: none;
+    }
+    #themiddle a:hover {
+        color: #f5edf5;
+        text-decoration: overline underline;
+        text-decoration-color: rgb(22, 1, 34);
+    }
+    #midfootMid {
+        display: flex;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    #midfootMid a {   
+        display: flex;
+    }
+    .iconLinks {
+        width: 100%;
+    }
+    #themiddle img {
+        padding: 2%
+    }
+    .bottomFooter {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        background-color: rgb(253, 209, 247);
+        -webkit-box-shadow: 0 -6px 6px 0 rgb(53, 53, 53);
+        -moz-box-shadow: 0 -6px 6px 0 rgb(53, 53, 53);
+        box-shadow: 0 -6px 6px 0 rgb(53, 53, 53);
+    }
+    .bottomFooter a {
+        color: #6e126e;
+    }
+    .bottomFooter a:hover {
+        color: #FFF;
+    }
+
+    /**************
+    *  
+    * Home Page
+    *
+    ***************/
+    /* Hero img and book now btn */
+    #welcomePage {
+        display: flex;
+    }
+    #welcomePage img {
+        border-radius: 0.2em;
+        -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+            box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    }
+    #welcomePage h1 {
+        font-size: 2.262em;
+    }
+    #welcomePage a {
+        color: #9e1097;
+    }
+    #welcomePage a:hover {
+        color: #ffffff;
+    }
+    #welcomepart2 {
+        font-size: 1.5em;
+    }
+    #homeContent {
+        margin: 0 auto;
+    }
+    .homeMain {
+        display: flex;
+    }
+    /* Hero Img Section */
+    .heroContainer a {
+        text-align: center;
+        background-color: #7a0975;
+        color: rgb(248, 248, 248);
+        border-radius: 0.5em;
+        -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+            box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    }
+    .heroContainer a:hover {
+        background-color: #ffffff;
+        color: rgb(122, 9, 117);
+    }
+    /* Temple Info Section */
+    .templeInfoContainer {
+        background-color: #fafdff;
+        padding: 2em;
+        border-radius: 0.2em;
+        display: flex;
+    }
+    .indTempImg {
+        padding-top: 2em;
+        align-self: flex-start;
+    }
+    .indTempImg img{
+        max-width: 100%;
+        border-radius: 0.2em;
+    }
+    .templeTextContainer{
+        margin-left: 2em;
+    }
+    .mainTempleInfoHome h3{
+        margin-bottom: -0.5em;
+    }
+    
+    /* Amenities Section */
+    .amenitiesHome {
+        background-color: #5f0a5b;
+        padding: 2em;
+        border-radius: 0.2em;
+        color: rgb(255, 255, 255);
+    }
+    .amenitiesHome li {
+        padding: 0.38em 0;
+        list-style: none; 
+    }
+    .amenitiesHome li:before {
+        content: "\2022";
+        color: #5f0a5b;
+        font-weight: bold;
+        display: inline-block; 
+        width: 1em;
+        margin-left: -1em;
+    }
+
+
+
+    /*********************************************************************************************Temple Page****************************************/
+    .templeTitleBox {
+        width: 300px;
+        margin: 3em 2em 0 0;
+        padding: 15px;
+        background-color: #5f0a5b;
+        color: #FFF;
+        border-radius: 2%;
+    }
+    .weatherSumBox {
+        max-width: 300px;
+        margin: 3em 2em 0 0;
+        padding: 15px;
+        background-color: #5f0a5b;
+        color: #FFF;
+        border-radius: 2%;
+    }
+    .weatherSumBox .value {
+        color: #ffffff;
+    }
+    
+    .weatherInfoLine .label, .weatherInfoLine .value {
+        display: inline-block;
+        margin: 2px;
+    }
+    .wImageDiv {
+        max-width: 100px;
+        margin: 0 auto;
+    }
+    
+.templeInfoContainerBox {
+    max-width: 300px;
+    margin: 1em;
+    padding-top: 0.5em;
+    padding: 1em;
+    background-color: #4f524a;
+    color: #FFF;
+    border-radius: 2%;
+}
+.clickSlideToggle:hover {
+    color: #9e1097;
+    cursor: pointer;
+}
+#smallViewBtoTop {
+    position: fixed;
+    border-radius: 1em;
+    display: block;
+    bottom: 0.5em;
+    right: 1.5em;
+    border: none;
+    background-color: rgba(92,131,1, 0.5);
+    padding: 0.5em 1em;
+    cursor: pointer;
+    -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+            box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+}
+#smallViewBtoTop:focus {outline:0;}
+
+
+/*********************************************************************Services Page************************************************************************/
+/* Services Main Section */
+
+#servicesMain {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.servicesInfoContainer {
+    background-color: #FFF;
+    width: 375px;
+    padding: 2em;
+    border-radius: 0.2em;
+    color: #1f1f1f;
+    margin: 2em;
+    -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+}
+.servicesInfoContainer img {
+    border-radius: 2%;
+    width: 100%;
+    margin: 0 auto;
+    -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+}
+.servicesInfoContainer li {
+    padding: 0.38em 0;
+    list-style: none; 
+}
+.servicesInfoContainer li:before {
+    content: "\2022";
+    color: #9e1097;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+
+
+/**************
+*  
+* Reservation Page
+*
+***************/
+#reservationBackground {
+    background-image: url("../images/reservations/reservationBackground.jpg");
+    background-color: rgb(255, 255, 255);
+    background-position:center;
+	background-repeat:no-repeat;
+    background-size:cover; 
+    width:100%;
+}
+/* Form Title */
+#reservationTitle {
+    color: rgb(255,254,254);
+}
+
+/* Form Container */
+.reservationFormWrapper {
+    background: rgba(255,254,254, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+}
+/* Form Content */
+#upperUpper, #lowerUpper {
+    display: flex;
+}
+#upperUpper > div, #lowerUpper > div {
+    justify-content: space-evenly;
+    margin-right: 1.5em;
+}
+/* Form Inputs */
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.reservationForm input::placeholder {
+    color: #666666;
+}
+.reservationForm .input-field .input, .reservationForm .message textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    color: #1f1f1f;
+}
+.reservationForm .subjArea {
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    color: #1f1f1f;
+}
+.reservationForm .messageReservation {
+    display: flex;
+    margin: 1em;
+}
+.reservationForm .subjOpt {
+    color: #1f1f1f;
+}
+
+
+
+/**************
+*  
+* Contact Page
+*
+***************/
+.containerContact{
+    display: flex;
+    width: 100%;
+    background-color: #FFF;
+    margin-bottom: -5em;
+    padding-bottom: 2em;
+}
+#contactHeader {
+    margin: 1.5em auto;
+    text-align: center;
+}
+.formField{
+    display: flex;
+}
+.formField .contact-form, .formField .info{
+    margin: 2em;
+}
+.contact-form{
+    background: rgba(31,31,31,0.9);
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px;
+}
+input::placeholder {
+    color: rgba(209,213,216,0.7);
+}
+.input-field{
+    display: flex;
+}
+.input-field .input, .message textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid rgba(92,131,1, 0.8);
+    padding: 10px;
+    color: rgba(209,213,216,0.7);
+}
+.subjArea {
+    margin: 10px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 8);
+    padding: 5px;
+    color: rgba(255, 255, 255, 7);
+}
+.message textarea{
+    height: 100px;
+    width: 100%;
+}
+.btn {
+    background-color: rgb(122, 9, 117);
+    max-width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+    -webkit-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    -moz-box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+    box-shadow: 2px 8px 16px 2px rgb(32, 32, 32);
+}
+.btn:hover {
+    background:  #FFF;
+    color: rgb(122, 9, 117);
+    -webkit-box-shadow: 1px 4px 8px 1px rgb(32, 32, 32);
+    -moz-box-shadow: 1px 4px 8px 1px rgb(32, 32, 32);
+    box-shadow: 1px 4px 8px 1px rgb(32, 32, 32);
+}
+.info{
+    display: flex;
+    margin-left: 4em;
+}
+
+input:not([type="submit"]):valid:focus,
+textarea:valid:focus {
+    box-shadow: 0 0 10px rgba(101, 169, 10, 0.8);   
+    outline: 0;
+}
+input:not([type="submit"]):invalid:focus,
+textarea:invalid:focus {
+    box-shadow: 0 0 10px rgba(204, 63, 133, 0.8);   
+    outline: 0;
+}
+
+input[type="text"]#name:focus:invalid ~ #nameLbl:before {
+    content: "Please enter your name!";
+    color: #827576;
+    font-size: 0.8em;
+}
+input:focus:valid ~ #nameLbl:before {
+    content: "Great, thank you!";
+    color: rgba(228, 241, 254, 0.8);
+    font-size: 0.8em;
+}
+.subjOpt {
+    color: #827576;
+}
+
+#contactFooterDiv {
+    margin-top: 0;
+    background-color: #FFF;
+}
+
+
+/**************
+*  
+* Resources Page
+*
+***************/
+#resourcesContainer {
+    margin: 1em auto;
+}
+#resourcesContainer li {
+    margin: 1em auto;
+}
+#resourcesContainer a {
+    color: #334901;
+}
+#resourcesContainer a:hover {
+    color: #9e1097;
+}

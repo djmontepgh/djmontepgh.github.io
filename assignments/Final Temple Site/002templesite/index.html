@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <meta name="description" content="Book a hotel with Hotel Inn and Suites">
+    <meta name="keywords" content="Home,Temple,Resrvation,Amenaties,Free Access,Babysitting,Kitchenette,Wedding Reception,Indoor Pool">
+    <title>Temple Inn and Suites</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/large.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+</head>
+
+<body>
+    <div class="FirstClass">
+        <!-- Header ------------------------------------------------------------------------------------------------------------->
+        <header>
+            <div class="headerL">
+                <a href="index.html"><img id="siteLogo" src="images/icons/logo.png" alt="Temple Inn and Suites"></a>
+            </div>
+            <div class="headerR">
+                <a href="tel:463.474.7328">DIAL: GOD-IS-GREAT (463.474.7328)</a>
+            </div>
+        </header>
+        <!-- Navigation ------------------------------------------------------------------------------------------------------------->
+        <nav>
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="navigation hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="temple.html">Temple</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="services.html">Services
+                        <ul class="sub-menu">
+                                <li>Reception</li>
+                                <li>F-T Temple Missionary</li>
+                        </ul>                            
+            </a></li>
+                <li><a id="endNav" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+
+    <!-- Hero Image ----------------------------------------------------------------------------------------------->
+    <div class="containerMain" id="homeContent">
+        <div class="heroContainer">
+            <picture>
+                <source media="(min-width: 416px)" srcset="images/home/templehead3.jpg">
+                <img id="backgroundHeroImage" src="images/home/templehead3.jpg" alt="St George">
+            </picture>
+            <a href="reservation.html" class="bookNow">Book Now</a>
+        </div>
+
+        <main>
+            <!-- Welcome Text ------------------------------------------------------------------------------>
+            <div class="welcomePage" id="welcomePage">
+
+                <div id="welcome">
+                    <h1>Temple Inn & Suites</h1>
+                    <p id="welcomepart2">Whether you're working for the dead or you are here for a wedding we will accommidate <strong> <a href="reservation.html">YOU</a></strong>!</p>
+                    <p>Our guest services will make you feel right at home as if your home was the Celestial Kingdom. If you have
+                        any questions please give us a call, GOD-IS-GREAT. We are here to serve the Lord by serving his faithful children.  <a href="reservation.html">here</a>.</p>
+                    <p>Here at Temple Inn & Suites, we not only make sure you have clean sheets and hot water. We also make sure to design your stay based on what you're here for. Are you
+                        to work at the temple for a few months? Then we will treat you like you live here. Because you pretty much will!! Are here for a wedding? We'll put you in the up-all-night'ers 
+                        wing. Do you have kids? We have a spot near a nursery and play area, that offers complementary day/evening care Feel like staying for eternity? Stick around. President Nelson 
+                        said it won't be much longer. You may just get to spend eternity here. Most importantly, we are here for you!</p>
+                    <p>Thank you!</p>
+                </div>
+
+            <div class="MainPic">                    
+                <picture>
+                    <source media="(max-width: 1000px)" srcset="images/home/lobbymid.jpg">
+                    <source media="(min-width: 1001px)" srcset="images/home/lobby.jpg">
+                   
+                    <img id="backgroundImage" src="images/home/lobby.jpg" alt="hotel lobby image">
+                </picture>
+            </div>
+
+            </div>
+
+            <div class="homeMain">
+                <!-- Temple Info -------------------------------------------------------------------------------------->
+                <div class="templeInfoContainer">
+
+                    <div class="indTempImg">
+                        <h2>Washington DC Temple</h2>
+                        <img src="images/temples/DCTemple.jpg" alt="Washington DC Temple">
+                    </div>
+
+                    <div class="templeTextContainer">
+                        <div class="mainTempleInfoHome">
+                            <h3>Address</h3>
+                            <p>9900 Stoneybrook Dr</p>
+                            <p>Kensington, MD 20895</p>
+                            <h3>Telephone</h3>
+                            <p>301.588.0650</p>
+                            <h3>Services</h3>
+                            <p>Clothing rental available</p>
+                            <p>Cafeteria available</p>
+                            <p>No patron housing available</p>
+                            <p>Distribution center nearby</p>
+                            <p>Free tickets to heaven</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Amenities Summary -->
+                <section class="amenitiesHome">
+                    <h2>Free Amenities Include</h2>
+                    <ul>
+                        <li>Breakfast</li>
+                        <li>Excersize/workout room</li>
+                        <li>Indoor pool</li>
+                        <li>WiFi high-speed internet access</li>
+                        <li>Butter churn</li>
+                        <li>Parking</li>
+                        <li>Space Shuttle Tours</li>
+                        <li>Family history consultation</li>
+                        <li>Family ordinance card services</li>
+                    </ul>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer ---------------------------------------------------------------------------------------------->
+    <footer>
+        <div id="Base">
+            <div id="themiddle">
+
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701323!2d-77.09772048464716!3d38.98325177955754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1554947317916!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+                <div id="bottomfooterinfo">
+
+                    <h4>Temple Inn & Suites</h4>
+
+                    <address>
+                        <div class="footerstuffs">
+                            <div>
+                                <img src="images/icons/location.png" alt="location icon">
+                            </div>
+                            <div>
+                                <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+                            </div>
+                        </div>
+                    </address>
+
+                    <div class="footerstuffs">
+                        <img src="images/icons/phone.png" alt="phone icon"><a href="tel">GOD-IS-GREAT (463.474.7328)</a>
+                    </div>
+
+                    <div class="footerstuffs">
+                        <img src="images/icons/mail.png" alt="mail icon"><a href="mailto:booknow@tis.com">booknow@tis.com</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="midfootMid">
+                <div class="iconLinks">
+                    <a href="https://www.facebook.com"><img src="images/icons/fb.png" alt="facebook icon"></a>
+                    <a href="pinterest.com"><img src="images/icons/pinterest.png" alt="pinterest icon"></a>
+                    <a href="twitter.com"><img src="images/icons/twitter.png" alt="twitter icon"></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="bottomFooter">
+            <div>
+                <p>&copy;2019 Temple Inn & Suites | Attributions | Gary Shook</p>
+            </div>
+            <div>
+                <a href="resource.html">Resources</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- JQuery ----------------------------------------------------------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <!-- My Scripts ------------------------------------------------------------------------------------->
+    <script src="scripts/togglemenu.js"></script>
+    <script src="scripts/buttons.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+
+</html>

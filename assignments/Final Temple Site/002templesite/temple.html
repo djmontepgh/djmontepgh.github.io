@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <meta name="description" content="Book a hotel with Hotel Inn and Suites">
+    <meta name="keywords" content="Home,Temple,Resrvation,Amenaties,Free Access,Babysitting,Kitchenette,Wedding Reception,Indoor Pool">
+    <title>Temple Inn and Suites</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/small.css">        <link rel="stylesheet" type="text/css" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/large.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+</head>
+
+<body>
+    <div class="FirstClass">
+        <!-- Header -->
+        <header>
+
+            <div class="headerL">
+                <a href="index.html"><img id="siteLogo" src="images/icons/logo.png" alt="Temple Inn and Suites"></a>
+            </div>
+
+            <div class="headerR">
+                <a href="tel:463.474.7328">DIAL: GOD-IS-GREAT (463.474.7328)</a>
+            </div>
+
+        </header>
+
+        <!-- Navigation -->
+        <nav>
+                <button onclick="toggleMenu()">&#9776; Menu</button>
+                <ul id="primaryNav" class="navigation hide">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="temple.html">Temple</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="services.html">Services
+                            <ul class="sub-menu">
+                                    <li>Reception</li>
+                                    <li>F-T Temple Missionary</li>
+                            </ul>                            
+                </a></li>
+                    <li><a id="endNav" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    
+        </div>
+    
+    <h1 class="pageTitle">Temples</h1>
+    <!-- RomeIT Italy Temple -->
+    <div class="templeInfoContainer templeTop">
+
+        <div class="indTempImg">
+            <div>
+                <h2 class="titleWeather" id="temple1Title">Rome Italy Temple</h2>
+                <img src="images/temples/rome.jpg" alt="RomeIT Italy">
+            </div>
+            <section class="weatherSumBox">
+                <div class="weatherDetails">
+                    <h3>Weather Summary</h3>
+                    <hr>
+                    <div class="wImageDiv">
+                        <div id="wImageRomeIT"></div>
+
+                    </div>
+                    <div class="weatherInfoLine">
+                        <p class="label">Currently:</p>
+                        <p class="value" id="imgDescriptionRomeIT"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Temperature: </p>
+                        <p class="value" id="curTempRomeIT"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Humidity:</p>
+                        <p class="value" id="humidityRomeIT"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Precipitation:</p>
+                        <p class="value" id="precipitationRomeIT"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Wind Speed:</p>
+                        <p class="value" id="windRomeIT"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Wind chill:</p>
+                        <p class="value" id="windChillRomeIT"></p>
+                    </div>
+
+                </div>
+
+
+            </section>
+        </div>
+
+
+        <div class="templeTextContainer">
+            <h4>Click on any of the options below for more information:</h4>
+            <div class="mainTempleInfo">
+                <h3 class="clickSlideToggle" id="mainInfoClickRomeIT">Contact Info</h3>
+                <hr>
+                <div id="mainInfoSlideRomeIT">
+                    <div class="templeInfoContainerBox">
+                        <h3>Address</h3>
+                        <p>Via di Settebagni 376   00139 Roma RM Italy</p>
+                    </div>
+                    <div class="templeInfoContainerBox">
+                        <h3>Telephone</h3>
+                        <p>+39 06.9480.5050</p>
+                    </div>
+                </div>
+
+                <h3 class="clickSlideToggle" id="servicesClickRomeIT">Services and Schedules</h3>
+                <hr>
+                <div id="servicesSlideRomeIT">
+                    <div class="templeInfoContainerBox">
+                        <h3>Services</h3>
+                        <p>Toga or Greek Robe Rental</p>
+                        <p>Cafeteria available</p>
+                        <p>Weekly gladiator competitions</p>
+                        <p>Patron housing available</p>
+                        <p>Distribution center nearby</p>
+                    </div>
+
+                    <div class="templeInfoContainerBox">
+                        <h3>Ordinance Schedule</h3>
+                        <p>For schedule information, please call the temple.</p>
+                    </div>
+
+                    <div class="templeInfoContainerBox">
+                        <h3>Session Schedule</h3>
+                        <p>For schedule information, please call the temple.</p>
+                    </div>
+
+                </div>
+
+                <h3 class="clickSlideToggle" id="closuresClickRomeIT">Temple Closures</h3>
+                <hr>
+                <div id="closuresSlideRomeIT">
+                    <div class="closures templeInfoContainerBox">
+                        <h3>Closures</h3>
+                        <div id="RomeITClosures"></div>
+                    </div>
+                </div>
+
+                <h3 class="clickSlideToggle" id="summaryClickRomeIT">Temple History</h3>
+                <hr>
+                <div id="summarySlideRomeIT">
+                    <div class="templeInfoContainerBox">
+                        <h3>History</h3>
+                        <p>October 4, 2008 - Announced</p>
+                        <p>October 23, 2010 - Groundbreaking</p>
+                        <p>March 10-12, 2019 - Dedication</p>
+                    </div>
+
+                    <div class="templeInfoContainerBox">
+                        <h3>Summary</h3>
+                        <p>The Rome Italy Temple is a temple of The Church of Jesus Christ of Latter-day Saints in Rome, Italy. 
+                            The intent to construct the temple was announced on 4 October 2008, by church president Thomas S. Monson 
+                            during a session of the church's general conference.</p>
+                        <p>On March 29, 2018, the LDS Church announced that a public open house would be held from January 28 through 
+                            February 16, 2019, excluding Sundays. The temple was dedicated on March 10-12, 2019, with services originally 
+                            announced as being from March 10 through March 17.[4] The church later updated the dedication dates to be 
+                            scheduled from March 10 through March 12.</p>
+                            <p>Size: 40,000 sq ft</p>
+                            Reference - https://en.wikipedia.org/wiki/Rome_Italy_Temple
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- San Diego Temple -->
+    <div class="templeInfoContainer">
+
+        <div class="indTempImg">
+            <div>
+                <h2 class="titleWeather" id="temple2Title">San Diego Temple</h2>
+                <img src="images/temples/SanDiego.jpg" alt="San Diego Temple">
+            </div>
+
+            <section class="weatherSumBox">
+                <div class="weatherDetails">
+                    <h3>Weather Summary</h3>
+                    <hr>
+
+                    <div class="wImageDiv">
+                        <div id="wImageSanDiego"></div>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Currently:</p>
+                        <p class="value" id="imgDescriptionSanDiego"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Temperature: </p>
+                        <p class="value" id="curTempSanDiego"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Humidity:</p>
+                        <p class="value" id="humiditySanDiego"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Precipitation:</p>
+                        <p class="value" id="precipitationSanDiego"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Wind Speed:</p>
+                        <p class="value" id="windSanDiego"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Wind chill:</p>
+                        <p class="value" id="windChillSanDiego"></p>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <div class="templeTextContainer">
+            <h4>Click on any of the options below for more information:</h4>
+            <div class="mainTempleInfo">
+                <h3 class="clickSlideToggle" id="mainInfoClickSanDiego">Contact Info</h3>
+                <hr>
+                <div id="mainInfoSlideSanDiego">
+                    <div class="templeInfoContainerBox">
+                        <h3>Address</h3>
+                        <p>7474 Charmant Dr Diego CA 92122</p>
+                    </div>
+                    <div class="templeInfoContainerBox">
+                        <h3>Telephone</h3>
+                        <p>+1 858.622.0991</p>
+                    </div>
+                </div>
+
+                <h3 class="clickSlideToggle" id="servicesClickSanDiego">Services and Schedules</h3>
+                <hr>
+                <div id="servicesSlideSanDiego">
+                    <div class="templeInfoContainerBox">
+                        <h3>Services</h3>
+                        <p>Clothing rental available</p>
+                        <p>Cafeteria available</p>
+                        <p>NO patron housing available</p>
+                        <p>Distribution center nearby</p>
+                    </div>
+
+                    <div class="templeInfoContainerBox">
+                        <h3>Ordinance Schedule</h3>
+                        <p>For schedule information, please call the temple.</p>
+                    </div>
+
+                    <div class="templeInfoContainerBox">
+                        <h3>Session Schedule</h3>
+                        <p>For schedule information, please call the temple.</p>
+                    </div>
+
+                </div>
+
+                <h3 class="clickSlideToggle" id="closuresClickSanDiego">Temple Closures</h3>
+                <hr>
+                <div id="closuresSlideSanDiego">
+                    <div class="closures templeInfoContainerBox">
+                        <h3>Closures</h3>
+                        <div id="RomeITClosures"></div>
+                    </div>
+                </div>
+
+                <h3 class="clickSlideToggle" id="summaryClickSanDiego">Temple History</h3>
+                <hr>
+                <div id="summarySlideSanDiego">
+                    <div class="templeInfoContainerBox">
+                        <h3>History</h3>
+                        <p>April 7, 1984 - Announced</p>
+                        <p>February 27, 1988 - Groundbreaking</p>
+                        <p>April 25, 1993 - Dedication</p>
+                    </div>
+                    <div class="templeInfoContainerBox">
+                        <h3>Summary</h3>
+                        <p>The San Diego California Temple is the 47th constructed and 45th operating temple of 
+                            The Church of Jesus Christ of Latter-day Saints. Located near the La Jolla community 
+                            of San Diego, it was built with two main spires, but unique to this temple are four 
+                            smaller spires at the base of each main spire. </p>
+                        <p>The San Diego Temple was announced on April 7, 1984, and dedicated on April 25, 1993 
+                           by Gordon B. Hinckley. The temple was built on a 7.2-acre (2.9 ha) plot, has 4 ordinance
+                           rooms and 8 sealing rooms, and has a total floor area of 72,000 square feet </p>
+                        <p>Although there is no visitors' center, the church maintains the Mormon Battalion Historic 
+                            Site in Old Town, San Diego.</p>
+                        <p>After suffering a mild heart attack four months earlier, President Ezra Taft Benson 
+                           made his first trip outside the Salt Lake Valley to break ground for the San Diego 
+                           California Temple—his first time presiding over a temple groundbreaking.</p>
+                        <p>Size: 72,000 square feet </p>
+                        Reference -
+                            https://www.lds.org/ensign/2010/07/small-and-simple-things/RomeIT-denmark-temple?lang=eng
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Gilbert Temple -->
+    <div class="templeInfoContainer">
+
+        <div class="indTempImg">
+            <div>
+                <h2 class="titleWeather" id="temple3Title">Gilbert Temple</h2>
+                <img src="images/temples/Gilbert.jpg" alt="Gilbert Temple">
+            </div>
+
+            <section class="weatherSumBox">
+                <div class="weatherDetails">
+                    <h3>Weather Summary</h3>
+                    <hr>
+                    <div class="wImageDiv">
+                        <div id="wImageGilbert"></div>
+
+                    </div>
+                    <div class="weatherInfoLine">
+                        <p class="label">Currently:</p>
+                        <p class="value" id="imgDescriptionGilbert"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Temperature: </p>
+                        <p class="value" id="curTempGilbert"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Humidity:</p>
+                        <p class="value" id="humidityGilbert"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Precipitation:</p>
+                        <p class="value" id="precipitationGilbert"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Wind Speed:</p>
+                        <p class="value" id="windGilbert"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Wind chill:</p>
+                        <p class="value" id="windChillGilbert"></p>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+        </div>
+
+        <div class="templeTextContainer">
+            <h4>Click on any of the options below for more information:</h4>
+            <div class="mainTempleInfo">
+                <h3 class="clickSlideToggle" id="mainInfoClickGilbert">Contact Info</h3>
+                <hr>
+                <div id="mainInfoSlideGilbert">
+                    <div class="templeInfoContainerBox">
+                        <h3>Address</h3>
+                        <p>3301 S Greenfield Rd Gilbert Arizona 85297</p>
+                    </div>
+                    <div class="templeInfoContainerBox">
+                        <h3>Telephone</h3>
+                        <p>+1 480.822.5000</p>
+                    </div>
+                </div>
+
+                <h3 class="clickSlideToggle" id="servicesClickGilbert">Services and Schedules</h3>
+                <hr>
+                <div id="servicesSlideGilbert">
+                    <div class="templeInfoContainerBox">
+                        <h3>Services</h3>
+                        <p>Clothing rental available</p>
+                        <p>NO cafeteria available</p>
+                        <p>NO patron housing available</p>
+                        <p>Distribution center nearby</p>
+                    </div>
+
+                    <div class="templeInfoContainerBox">
+                        <h3>Ordinance Schedule</h3>
+                        <p>For schedule information, please call the temple.</p>
+                    </div>
+
+                    <div class="templeInfoContainerBox">
+                        <h3>Session Schedule</h3>
+                        <p>For schedule information, please call the temple.</p>
+                    </div>
+
+                </div>
+
+                <h3 class="clickSlideToggle" id="closuresClickGilbert">Temple Closures</h3>
+                <hr>
+                <div id="closuresSlideGilbert">
+                    <div class="closures templeInfoContainerBox">
+                        <h3>Closures</h3>
+                        <div id="GilbertClosures"></div>
+                    </div>
+                </div>
+
+                <h3 class="clickSlideToggle" id="summaryClickGilbert">Temple History</h3>
+                <hr>
+                <div id="summarySlideGilbert">
+                    <div class="templeInfoContainerBox">
+                        <h3>History</h3>
+                        <p>April 26, 2008 - Announced</p>
+                        <p>November 13, 2010 - Groundbreaking</p>
+                        <p>March 2, 2014 - Dedicated</p>
+                    </div>
+                    <div class="templeInfoContainerBox">
+                        <h3>Summary</h3>
+                        <p>On May 15, 2012, hundreds of spectators gathered to the Gilbert Arizona Temple 
+                            to witness the raising of the gold-leafed angel Moroni statue atop the single 
+                            central spire. Numerous students, who attend a grade school across the street 
+                            from the temple, gathered in the school parking lot that day with their families. 
+                            As Moroni began his flight, a large group of middle school students created a 
+                            spiritually poignant moment as they broke into song, singing the Primary favorite 
+                            "I Love to See the Temple."</p>
+                            <p>On Wednesday, August 5, 2009, legal representative for the Church, Paul Gilbert, 
+                                presented preliminary plans for the Gilbert Arizona Temple to the Town of Gilbert 
+                                Planning Commission. He apologized that a final design review package had not yet 
+                                been submitted and explained: "This temple is going to be a very unique temple. 
+                                It won't follow the typical pattern and paragon that has been used in many of the 
+                                other temples. It's designed to be a very special temple and, therefore, it is 
+                                taking longer to do the details on coming forth with the building and what it will 
+                                look like." He reassured the Commission, however, that the final design would be 
+                                submitted "very shortly." For illustrative purposes, the Draper Utah Temple was used 
+                                on the preliminary site plans.2 Overseeing the design is Gregory B. Lambright of 
+                                Architekton—an architectural firm located in Tempe.</p>
+                            Size: 85,326 square feet
+                        Reference - https://churchofjesuschristtemples.org/gilbert-arizona-temple/
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Washington DC Temple -->
+    <div class="templeInfoContainer templeBottom">
+
+        <div class="indTempImg">
+            <div>
+                <h2 class="titleWeather" id="temple4Title">Washington DC Temple</h2>
+                <img src="images/temples/DCTemple.jpg" alt="Washington DC Temple">
+            </div>
+            <section class="weatherSumBox">
+                <div class="weatherDetails">
+                    <h3>Weather Summary</h3>
+                    <hr>
+                    <div class="wImageDiv">
+                        <div id="wImageWashDC"></div>
+
+                    </div>
+                    <div class="weatherInfoLine">
+                        <p class="label">Currently:</p>
+                        <p class="value" id="imgDescriptionWashDC"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Temperature: </p>
+                        <p class="value" id="curTempWashDC"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Humidity:</p>
+                        <p class="value" id="humidityWashDC"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Precipitation:</p>
+                        <p class="value" id="precipitationWashDC"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Wind Speed:</p>
+                        <p class="value" id="windWashDC"></p>
+                    </div>
+
+                    <div class="weatherInfoLine">
+                        <p class="label">Wind chill:</p>
+                        <p class="value" id="windChillWashDC"></p>
+                    </div>
+
+                </div>
+
+
+            </section>
+        </div>
+
+        <div class="templeTextContainer">
+            <h4>Click on any of the options below for more information:</h4>
+            <div class="mainTempleInfo">
+                <h3 class="clickSlideToggle" id="mainInfoClickWashDC">Contact Info</h3>
+                <hr>
+                <div id="mainInfoSlideWashDC">
+                    <div class="templeInfoContainerBox">
+                        <h3>Address</h3>
+                        <p>9900 Stoneybrook Dr Kensington Maryland  20895</p>
+                    </div>
+                    <div class="templeInfoContainerBox">
+                        <h3>Telephone</h3>
+                        <p>+1 301.588.0650</p>
+                    </div>
+                </div>
+
+                <h3 class="clickSlideToggle" id="servicesClickWashDC">Services and Schedules</h3>
+                <hr>
+                <div id="servicesSlideWashDC">
+                    <div class="templeInfoContainerBox">
+                        <h3>Services</h3>
+                        <p>NO clothing rental available</p>
+                        <p>NO cafeteria available</p>
+                        <p>NO patron housing available</p>
+                        <p>NO distribution center nearby</p>
+                    </div>
+
+                    <div class="templeInfoContainerBox">
+                        <h3>Ordinance Schedule</h3>
+                        <p>For schedule information, please call the temple.</p>
+                    </div>
+
+                    <div class="templeInfoContainerBox">
+                        <h3>Session Schedule</h3>
+                        <p>For schedule information, please call the temple.</p>
+                    </div>
+
+                </div>
+
+                <h3 class="clickSlideToggle" id="closuresClickWashDC">Temple Closures</h3>
+                <hr>
+                <div id="closuresSlideWashDC">
+                    <div class="closures templeInfoContainerBox">
+                        <h3>Closures</h3>
+                        <div id="WashintonDCClosures"></div>
+                    </div>
+                </div>
+
+                <h3 class="clickSlideToggle" id="summaryClickWashDC">Temple History</h3>
+                <hr>
+                <div id="summarySlideWashDC">
+                    <div class="templeInfoContainerBox">
+                        <h3>History</h3>
+                        <p>November 15, 1968 - Announced</p>
+                        <p>Decembre 7, 1968 - Groundbreaking</p>
+                        <p>November 19-22, 1974 - Dedicated</p>
+                    </div>
+                    <div class="templeInfoContainerBox">
+                        <h3>Summary</h3>
+                        <p>On March 3, 2018, the Washington D.C. Temple closed for an extensive renovation project.
+                           The temple's mechanical and electrical systems will be upgraded, and all finishes and 
+                           furnishings will be refreshed. A minor addition to the exterior will house stairs and a 
+                           new elevator system. Changes will also be made to the grounds. The temple is anticipated 
+                           to reopen in 2020, following a public open house and rededication ceremony. The visitors' 
+                           center will remain open during the entire renovation, and the annual Festival of Lights 
+                           will still go on display in December</p>
+                        <p>The Washington D.C. temple has a total floor area of 160,000 sq ft (15,000 m2), making 
+                            it the third largest LDS temple. It holds six ordinance rooms and fourteen sealing rooms.</p>
+                        reference https://churchofjesuschristtemples.org/washington-d.c.-temple/
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="smallViewBtoTop">Back To Top</button>
+
+    <!-- Footer -->
+    <footer>
+        <div id="Base">
+            <div id="themiddle">
+
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405019701323!2d-77.09772048464716!3d38.98325177955754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1554947317916!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+                <div id="bottomfooterinfo">
+
+                    <h4>Temple Inn & Suites</h4>
+
+                    <address>
+                        <div class="footerstuffs">
+                            <div>
+                                <img src="images/icons/location.png" alt="location icon">
+                            </div>
+                            <div>
+                                <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+                            </div>
+                        </div>
+                    </address>
+
+                    <div class="footerstuffs">
+                        <img src="images/icons/phone.png" alt="phone icon"><a href="tel">GOD-IS-GREAT (463.474.7328)</a>
+                    </div>
+
+                    <div class="footerstuffs">
+                        <img src="images/icons/mail.png" alt="mail icon"><a href="mailto:booknow@tis.com">booknow@tis.com</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="midfootMid">
+                <div class="iconLinks">
+                    <a href="https://www.facebook.com"><img src="images/icons/fb.png" alt="facebook icon"></a>
+                    <a href="pinterest.com"><img src="images/icons/pinterest.png" alt="pinterest icon"></a>
+                    <a href="twitter.com"><img src="images/icons/twitter.png" alt="twitter icon"></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottomFooter">
+            <div>
+                <p>&copy;2019 Temple Inn & Suites | Attributions | Gary Shook</p>
+            </div>
+            <div>
+                <a href="resource.html">Resources</a>
+            </div>
+
+            <!-- <p id="openWeatherLink"><a href="https://openweathermap.org/">Open Weather Map</a></p>
+            <p id="pexelsLink"><a href="https://www.pexels.com/">Pexels Free Stock Photos</a></p>        -->
+        </div>
+
+    </footer>
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <!-- My Scripts -->
+    <script src="scripts/slidetoggle.js"></script>
+    <script src="scripts/buttons.js"></script>
+    <script src="scripts/getTempleData.js"></script>
+    <script src="scripts/togglemenu.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+
+
+
+</html>
